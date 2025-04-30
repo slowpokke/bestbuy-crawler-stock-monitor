@@ -20,7 +20,7 @@ You can easily customize it by modifying the `products` list in the script to mo
 - Copy the key behind : https://api.day.app/
 
 # Notice
-- This is a simple Python script that monitors stock availability for BestBuy products and sends a push notification using Bark.
+This is a simple Python script that monitors stock availability for BestBuy products and sends a push notification using Bark.
 
 It works by checking for the presence of an **"Add to Cart"** button on the product page.  
 If the phrase **"Items are covered under..."** appears below the button (as it usually does), the detection is highly accurate.
