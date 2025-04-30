@@ -1,4 +1,4 @@
-# GPU Stock Sentinel 🎯
+# GPU Stock Sentinel
 
 Lately, I’ve been trying to buy a GPU, but it’s hard to keep checking the site manually all the time. So I built this simple stock tracker that automatically monitors GPU availability on BestBuy.
 
