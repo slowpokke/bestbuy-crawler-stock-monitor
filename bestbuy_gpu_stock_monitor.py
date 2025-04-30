@@ -10,9 +10,9 @@ import requests
 
 
 #Checking Interval
-checking_interval = 30
+checking_interval = 10
 
-#Your Bark Device Token (Bark key)
+#Your Bark Key In The " "
 Enter_Your_Bark_Key_Here = "******"
 
 
