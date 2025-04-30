@@ -16,5 +16,5 @@ You can easily customize it by modifying the `products` list in the script to mo
 - webdriver-manager
 - requests
 
-## Bark APP
-- Easily download on your phone for free and enter the "Device Token"
+## Bark App
+- Copy the key behind : https://api.day.app/
