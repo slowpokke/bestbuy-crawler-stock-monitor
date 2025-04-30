@@ -7,7 +7,7 @@ Since BestBuy has pretty strong anti-bot protections, I used Selenium to simulat
 You can easily customize it by modifying the `products` list in the script to monitor different items of your choice.
 
 ## Features
-- Auto-checks RTX 5070 / 5080 pages every 30s
+- Auto-checks RTX 5070 / 5080 pages every 10s
 - Uses headless Chrome via Selenium to bypass anti-bot protections *Slow but effective*
 - Sends push notifications to your phone when stock is detected
 
