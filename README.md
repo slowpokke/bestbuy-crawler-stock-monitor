@@ -17,4 +17,4 @@ You can easily customize it by modifying the `products` list in the script to mo
 - requests
 
 ## Bark APP
-- Easily download on your phone for free and input the "Device Token"
+- Easily download on your phone for free and enter the "Device Token"
