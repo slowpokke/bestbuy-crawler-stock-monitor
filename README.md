@@ -6,7 +6,6 @@ This version is **specifically optimized for BestBuy**. It efficiently detects p
 
 ##  Features
 
-- Auto-checks selected BestBuy product pages every 30 seconds
 - Efficiently detects stock for **most GPUs and tech items**
 - Simulates real user behavior with Selenium to bypass anti-bot mechanisms
 - Sends **push notifications to your phone** via Bark (optional)
