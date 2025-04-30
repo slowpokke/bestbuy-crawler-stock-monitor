@@ -8,8 +8,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import requests
 
-# Checking interval in seconds
-checking_interval = 1
+# Checking interval in seconds, you can choose here
+checking_interval = 30
 
 # Your Bark Key
 BARK_KEY = "******"
