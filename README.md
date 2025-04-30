@@ -17,7 +17,7 @@ You can easily customize it by modifying the `products` list in the script to mo
 - requests
 
 ## Bark App
-- Copy the key behind : https://api.day.app/
+- Copy the key behind “https://api.day.app/” in Bark App
 
 # Notice
 This is a simple Python script that monitors stock availability for BestBuy products and sends a push notification using Bark.
