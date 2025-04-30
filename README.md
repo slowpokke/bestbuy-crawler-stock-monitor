@@ -1,29 +1,40 @@
-# GPU Stock Sentinel
+#  GPU Stock Sentinel (BestBuy Optimized)
 
 Lately, I’ve been trying to buy a GPU, but it’s hard to keep checking the site manually all the time. So I built this simple stock tracker that automatically monitors GPU availability on BestBuy.
 
-Since BestBuy has pretty strong anti-bot protections, I used Selenium to simulate real browser behavior and bypass JavaScript-based defenses. While it’s relatively slow (because it loads full pages), I think it’s good enough for tracking products that aren’t extremely competitive to purchase.
+This version is **specifically optimized for BestBuy**. It efficiently detects product stock status by directly checking for the presence of an **“Add to Cart”** button, which is a reliable indicator across most BestBuy product pages.
 
-You can easily customize it by modifying the `products` list in the script to monitor different items of your choice.
+##  Features
 
-## Features
-- Auto-checks RTX 5070 / 5080 pages every 2s
-- Uses headless Chrome via Selenium to bypass anti-bot protections *Slow but effective*
-- Sends push notifications to your phone when stock is detected
+- Auto-checks selected BestBuy product pages every 30 seconds
+- Efficiently detects stock for **most GPUs and tech items**
+- Simulates real user behavior with Selenium to bypass anti-bot mechanisms
+- Sends **push notifications to your phone** via Bark (optional)
+- Sends **Discord messages to your own server** (see `discord_*.py` version)
 
-## Python Environment
-- selenium
-- webdriver-manager
-- requests
+##  How It Works
 
-## Bark App
-- Copy the key behind “https://api.day.app/” in Bark App
+This script uses Selenium to open product pages in a real browser session (Chrome), waits briefly for the page to load, then searches for an **Add to Cart** button.
 
-# Notice
-This is a simple Python script that monitors stock availability for BestBuy products and sends a push notification using Bark.
+> 💡 If this button is present, the item is considered **in stock**.
 
-It works by checking for the presence of an **"Add to Cart"** button on the product page.  
-If the phrase **"Items are covered under..."** appears below the button (as it usually does), the detection is highly accurate.
+It avoids fragile page structure assumptions and works even if BestBuy’s layout changes slightly.
 
-If that line does not exist on the page, detection **may** fail or throw an error.  
-However, this method works reliably for **most BestBuy products**.
+##  Notifications (Optional)
+
+You can choose from two notification methods:
+
+- **Bark**: Sends instant push notifications to your iPhone via the Bark app  
+- **Discord**: Newer version (`discord_*.py`) allows you to send messages directly to a channel on your personal Discord server
+
+##  Requirements
+
+- Python 3.8+
+- `selenium`
+- `webdriver-manager`
+- `requests`
+
+Install dependencies:
+
+```bash
+pip install selenium webdriver-manager requests
