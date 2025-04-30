@@ -11,7 +11,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 # ========== Config ==========
 checking_interval = 30  # seconds between checks
 
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1367192577253572709/TQfuyNu-HWGTYItHY-SfD3ePwFSB4EuLbTVlOniFmgKvCj-OMPfLVq6iNqfQ_PZzEAQX"
+# Enter your Discord Webhook Url here
+DISCORD_WEBHOOK_URL = "*****" 
 
 products = {
     "RTX 5070": "https://www.bestbuy.com/site/nvidia-geforce-rtx-5070-12gb-gddr7-graphics-card-graphite-grey/6614154.p?skuId=6614154",
@@ -77,7 +78,7 @@ def check_stock():
             print(f"⚠️ {name} Check Failed: {e}")
 
 # ========== Main Loop ==========
-print("🚀 Starting product stock monitoring (Discord only)...")
+print("Starting product stock monitoring (Discord only)...")
 
 try:
     while True:
