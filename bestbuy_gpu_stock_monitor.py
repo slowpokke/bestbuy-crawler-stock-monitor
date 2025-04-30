@@ -12,7 +12,7 @@ import requests
 checking_interval = 5
 
 # Your Bark push key
-BARK_KEY = "wCZrN4NJSNebe3Tmhf8dN4"
+BARK_KEY = "****"
 
 # Target products to monitor
 products = {
